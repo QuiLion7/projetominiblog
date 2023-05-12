@@ -1,0 +1,27 @@
+.create_post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.create_post h2 {
+  font-size: 2.2em;
+}
+
+.create_post form {
+  min-width: 310px;
+  width: 600px;
+}
+
+.create_post p {
+  color: #aaa;
+  margin-bottom: 2wm;
+}
+
+textarea {
+  border: 1px solid #aaa;
+  padding: 5px;
+}

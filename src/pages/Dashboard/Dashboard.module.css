@@ -1,0 +1,76 @@
+.dashboard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1280px;
+  min-height: 70vh;
+}
+
+.dashboard h2 {
+  font-size: 2em;
+  margin-bottom: .3em;
+}
+
+.dashboard p {
+  color: #AAA;
+  margin-bottom: 1em;
+}
+
+.noposts {
+  text-align: center;
+}
+
+.noposts p {
+  margin-bottom: 1.5em;
+}
+
+.noposts a {
+  padding: 10px 25px;
+}
+
+.post_header, .post_row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* padding: 10px; */
+}
+
+.post_header {
+  font-weight: bold;
+  border-bottom: 2px solid #CCC;
+  margin-bottom: .5em;
+}
+
+.post_header span {
+  margin-bottom: .5em;
+}
+
+.post_row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #EEE;
+  padding: .5em 0;
+}
+
+.post_buttons {
+  width: 40%;
+  min-width: 300px
+}
+
+.post_row p {
+  width: 60%;
+  text-align: center;
+  color: #000;
+}
+
+.post_row button,
+.post_row a {
+  margin: 0 3px;
+  height: 30px;
+  width: 100px;
+  font-size: 0.7em;
+}

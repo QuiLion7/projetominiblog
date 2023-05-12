@@ -1,0 +1,20 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.login form {
+  min-width: 310px;
+  width: 600px;
+}
+
+.login p {
+  display: flex;
+  text-align: center;
+  color: #aaa;
+}

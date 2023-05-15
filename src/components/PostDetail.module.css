@@ -49,3 +49,42 @@
   font-size: 0.8em;
   margin-bottom: 1em;
 }
+
+@media screen and (max-width: 615px) {
+  .post_image {
+    max-width: 432px;
+    max-height: 540px;
+    padding: 5px;
+  }
+
+  .tags p {
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .post_image {
+    max-width: 360px;
+    max-height: 450px;
+    padding: 5px;
+  }
+
+  .post_detail h2 {
+    font-size: 1.2em;
+  }
+
+  .post_detail .tags {
+    margin-bottom: .9em;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0.3em;
+  }
+
+  .tags p {
+    margin: .5em;
+  }
+}

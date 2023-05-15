@@ -4,10 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: .5em 2em;
+  height: 10vh;
 }
 
 .brand {
   font-size: 1.2em;
+  margin-bottom: .3em;
 }
 
 .brand span {
@@ -17,10 +19,16 @@
 
 .links_list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
+  width: 100%;
 }
 
 .links_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 1em;
 }
 
@@ -31,4 +39,28 @@
 .active {
   background-color: #000;
   color: #FFF;
+  border-radius: 3px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand {
+    font-size: 1em;
+  }
+  .links_list {
+    font-size: .85em;
+    justify-content: center;
+    margin: 0;
+  }
+  .links_list li {
+    margin-right: .5em;
+  }
+  .links_list li a {
+    padding: .4em .3em;
+  }
 }

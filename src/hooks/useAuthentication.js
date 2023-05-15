@@ -1,5 +1,3 @@
-import { db } from "../firebase/config";
-
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -36,7 +34,7 @@ export const useAuthentication = () => {
 
       if(!data.email.includes('@prof.ce.gov.br')) {
         setloading(false)
-        return setError('Login restrito para usuários com o domínio "@testando.com"')
+        return setError('Login restrito para usuários com o domínio "@prof.ce.gov.br"')
       }
 
 

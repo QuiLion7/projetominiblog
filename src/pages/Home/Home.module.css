@@ -7,8 +7,9 @@
   width: 100%;
 }
 
-.home h1 {
+.home h2 {
   text-align: center;
+  width: 95%;
 }
 
 .posts {
@@ -18,16 +19,14 @@
 }
 
 .search_form {
-  max-width:  100%;
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
 }
 
 .search_form input {
-  margin-right: 10px;
-  width: 50%;
+  width: 500px;
 }
 
 .noposts {
@@ -40,4 +39,15 @@
 
 .noposts a {
   padding: 10px 25px;
+}
+
+@media screen and (max-width: 460px) {
+  .home h2 {
+    font-size: 1.2em;
+  }
+
+  .search_form button {
+    font-size: .8em;
+  }
+
 }

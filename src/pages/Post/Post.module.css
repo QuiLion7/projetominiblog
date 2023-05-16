@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1280px;
-  margin: 20px 30px 20px 30px;
+  width: 1280px;
+  max-width: 90%;
+  margin: 10px 20px 10px 20px;
 }
 
 .post_container h1 {
@@ -53,4 +54,32 @@
 
 .tags span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 460px) {
+  .post_container h1 {
+    font-size: 1.3em;
+  }
+
+  .post_body {
+    font-size: .8em;
+    line-height: 1.5em;
+    padding: 10px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: .9em;
+    font-size: .8em;
+  }
+
+  .post_container h3 {
+    font-size: .9em;
+  }
+
+  .tags p {
+    margin: .5em;
+  }
 }

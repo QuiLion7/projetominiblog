@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
   text-align: center;
 }
 
@@ -12,16 +12,37 @@
 }
 
 .create_post form {
-  min-width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
   width: 600px;
+  max-width: 90%;
+}
+.create_post form label,
+.create_post form label span,
+.create_post form label input,
+.create_post form label textarea {
+  width: 100%;
 }
 
 .create_post p {
   color: #aaa;
-  margin-bottom: 2wm;
+  margin-bottom: 2em;
 }
 
 textarea {
   border: 1px solid #aaa;
   padding: 5px;
+}
+
+@media screen and (max-width: 460px) {
+  .create_post h2 {
+    font-size: 1.5em;
+  }
+
+  .create_post p {
+    font-size: .8em;
+  }
 }

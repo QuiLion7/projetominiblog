@@ -1,7 +1,7 @@
 .login {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   text-align: center;
@@ -9,6 +9,10 @@
 }
 
 .login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-width: 310px;
   width: 600px;
 }
@@ -16,5 +20,25 @@
 .login p {
   display: flex;
   text-align: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 1.5em;
   color: #aaa;
+}
+
+.login form label,
+.login form label span,
+.login form label input,
+.login form label textarea {
+  width: 98%;
+}
+
+@media screen and (max-width: 460px) {
+  .login h1 {
+    font-size: 1.5em;
+  }
+
+  .login p {
+    font-size: .8em;
+  }
 }

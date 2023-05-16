@@ -40,8 +40,8 @@ const Dashboard = () => {
             <div key={post.id} className={styles.post_row}>
               <p>{post.title}</p>
               <div className={styles.post_buttons}>
-                <Link to={`/posts/${post.id}`} className='btn btn-outline button_link'>Ver</Link>
-                <Link to={`/posts/edit/${post.id}`} className='btn btn-outline button_link'>Editar</Link>
+                <Link to={`/posts/${post.id}`} className='btn btn-outline'>Ver</Link>
+                <Link to={`/posts/edit/${post.id}`} className='btn btn-outline'>Editar</Link>
                 <button onClick={() => deleteDocument(post.id)} className='btn btn-outline btn-danger'>Excluir</button>
               </div>
             </div>)}

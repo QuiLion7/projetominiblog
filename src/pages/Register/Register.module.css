@@ -1,7 +1,7 @@
 .register {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   text-align: center;
@@ -9,6 +9,10 @@
 }
 
 .register form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-width: 310px;
   width: 600px;
 }
@@ -16,5 +20,25 @@
 .register p {
   display: flex;
   text-align: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 1.5em;
   color: #aaa;
+}
+
+.register form label,
+.register form label span,
+.register form label input,
+.register form label textarea {
+  width: 98%;
+}
+
+@media screen and (max-width: 460px) {
+  .register h1 {
+    font-size: 1.5em;
+  }
+
+  .register p {
+    font-size: .8em;
+  }
 }

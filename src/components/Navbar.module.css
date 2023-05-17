@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: .5em 2em;
-  height: 10vh;
+  min-height: 8vh;
 }
 
 .brand {

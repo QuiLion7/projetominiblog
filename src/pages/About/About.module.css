@@ -8,7 +8,7 @@
 
 .about p {
   color: #aaa;
-  margin-bottom: 2em;
+  padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
 .about a {
@@ -18,11 +18,11 @@
 }
 
 @media screen and (max-width: 460px) {
-  .about h1{
+  .about h1 {
     font-size: 1.5em;
   }
 
   .about p {
-    font-size: .85em;
+    font-size: 0.85em;
   }
 }
